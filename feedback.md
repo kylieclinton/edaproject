@@ -1,1 +1,2 @@
-
+Kylie, these are all great topics.  I am partial to the first one because I see it as being something dog lovers would be interested in as some sort of an app to compare breeds across geographical regions.  #2  is really intriguing and space lovers would find it really interesting too.  All three of these topics would have great results for your EDA. -Rebekah Webb
+Hey Kylie, I think all of those topics are great! They all seem completely original, have a wide scope, and would be well-suited for visualization. I can't wait to see which topic you choose! - Justin Ross
