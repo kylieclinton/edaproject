@@ -9,3 +9,6 @@ make my graphs show increase in mentions over time
 increase line width on the line plots
 make sure colors are standard across all plots
 make sure they show trends that will help answer questions
+
+Blog post 1 feedback:
+SHA number: 7cafdf0
