@@ -9,9 +9,9 @@ years_df = pd.read_csv('years_df.csv')
 
 st.title('Marvel Comics Dashboard')
 
-selected_character = st.selectbox('Select a character', marvel_df['name'])
+selected_character = st.selectbox('Select a character', og_df['name'])
 
 name_df = marvel_df[marvel_df['name'] == selected_character]
 st.dataframe(name_df)
 
-# st.dataframe(marvel_df)
+st.dataframe(marvel_df)
