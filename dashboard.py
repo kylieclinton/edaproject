@@ -3,6 +3,9 @@ import numpy as np
 import streamlit as st
 import plotly.express as px
 import seaborn as sns
+import sys
+
+# print(sys.executable)
 # import matplotlib.pyplot as plt
 
 marvel_df= pd.read_csv('marvel_clean.csv')
