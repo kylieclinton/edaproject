@@ -12,3 +12,6 @@ make sure they show trends that will help answer questions
 
 Blog post 1 feedback:
 SHA number: 7cafdf0
+
+Blog post 2 feedback:
+SHA number: 1cf39fe
