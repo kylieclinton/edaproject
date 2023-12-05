@@ -22,7 +22,7 @@ colors = ['#d0384e',
 years_df.set_index('name', inplace=True)
 
 st.title('Marvel Comics Dashboard')
-
+st.write("This dashboard provides insights into the popularity of Marvel comics characters over time. Select characters and years to learn about their popularity over time")
 selected_character = st.selectbox('Select a character', years_df.index)
 
 st.header(selected_character)
@@ -36,18 +36,28 @@ tidy_df = pd.DataFrame({
 
 fig = px.line(tidy_df, x='Year', y='Mentions',
               labels={"Mentions": "Mentions", "Year": "Year"},
-              title=f'{selected_character} Mentions Over Time in Comics',
+              title=f'Cumulative Comic Book Appearances for {selected_character}',
               line_shape="linear", width=800, height=500, color_discrete_sequence=colors)
 
 # # Customize the layout
-fig.update_layout(xaxis=dict(tickangle=45, tickmode='linear', tick0=min(tidy_df['Year']), dtick=5, tickvals=list(range(1939, 2024, 5))))
-# Show the plot in Streamlit
+fig.update_layout(xaxis=dict(tickmode='auto'),     annotations=[
+        dict(
+            x=0,  # Adjust this value to the x-coordinate where you want the note
+            y=-2,   # Adjust this value to the y-coordinate where you want the note
+            xref="x",
+            yref="y",
+            text="Note: Year 0 is 1939 and goes to 2023",
+            showarrow=False,
+            ax=0,
+            ay=-40
+        )
+    ])
 
 st.plotly_chart(fig)
 # st.dataframe(years_df.index)
 st.write(f"Total mentions for {selected_character}: {cumulative_sum.iloc[-1]}")
-st.write(f"Year of highest mentions: {character.idxmax()}")
-st.write(f"Highest number of mentions in {character.idxmax()}: {character.max()}")
+st.write(f"Year {selected_character} was mentioned the most: {character.idxmax()}")
+st.write(f"Number of mentions in {character.idxmax()}: {character.max()}")
 #top 5 characters for a selected year and total mentions
 selected_year = st.selectbox('Select a year', years_df.columns)
 
@@ -68,4 +78,7 @@ selected_data = marvel_df[marvel_df['name'].isin(selected_characters)]
 selected_data.set_index('name', inplace=True)
 
 # Plot the bar chart
-st.bar_chart(selected_data['comics_available'].astype(int), color='#d0384e')
+st.bar_chart(selected_data['stories_available'].astype(int), color='#d0384e')
+
+st.markdown('[Visit My Blog](https://kylieclinton.github.io/blog386/)', unsafe_allow_html=True)
+st.markdown('[Visit My GitHub Repository](https://github.com/kylieclinton/edaproject/)', unsafe_allow_html=True)
