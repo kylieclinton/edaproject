@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
+import plotly as pt
 import plotly.express as px
-import seaborn as sns
 import sys
 
 # print(sys.executable)
