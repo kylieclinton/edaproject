@@ -66,7 +66,7 @@ st.text(" ")
 st.text(" ")
 selected_year = st.selectbox('Select a year', years_df.columns)
 
-st.header(selected_year)
+
 selected_year_df = years_df[selected_year].sort_values(ascending=False)[:5]
 st.subheader(f"Top 5 characters for {selected_year}:")
 st.dataframe(selected_year_df, width=450)
