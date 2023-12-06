@@ -62,6 +62,8 @@ st.write(f"Total mentions for {selected_character}: {cumulative_sum.iloc[-1]}")
 st.write(f"Year {selected_character} was mentioned the most: {character.idxmax()}")
 st.write(f"Number of mentions in {character.idxmax()}: {character.max()}")
 #top 5 characters for a selected year and total mentions
+st.text(" ")
+st.text(" ")
 selected_year = st.selectbox('Select a year', years_df.columns)
 
 st.header(selected_year)
@@ -73,6 +75,8 @@ st.dataframe(selected_year_df, width=450)
 
 #comic mentions barplot for selected character(s)
 #use selection checkbox
+st.text(" ")
+st.text(" ")
 selected_characters = st.multiselect('Select characters', marvel_df['name'])
 
 st.subheader('Character Mentions in Comics')
