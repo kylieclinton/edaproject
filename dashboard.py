@@ -75,7 +75,7 @@ st.dataframe(selected_year_df, width=450)
 #use selection checkbox
 selected_characters = st.multiselect('Select characters', marvel_df['name'])
 
-st.header('Character Mentions in Comics')
+st.subheader('Character Mentions in Comics')
 # st.bar_chart(marvel_df[marvel_df['name'].isin(selected_characters)]['comics_available'].astype(int))
 selected_data = marvel_df[marvel_df['name'].isin(selected_characters)]
 selected_data.set_index('name', inplace=True)
