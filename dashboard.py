@@ -70,6 +70,7 @@ selected_year = st.selectbox('Select a year', years_df.columns)
 selected_year_df = years_df[selected_year].sort_values(ascending=False)[:5]
 st.subheader(f"Top 5 characters for {selected_year}:")
 st.dataframe(selected_year_df, width=450)
+st.caption("Note: Year column shows mentions in that year for the character")
 #make the dataframe larger so the whole name shows
 
 
