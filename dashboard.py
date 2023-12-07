@@ -60,8 +60,7 @@ fig.update_layout(xaxis=dict(tickmode='auto'),     annotations=[
 
 tickval = list(years_df.columns)
 
-fig.update_xaxes(tickvals=tickval, ticktext = tickval)
-fig.show()
+fig.update_xaxes(tickvals=tickval, ticktext = [str(i) for i in tickval])
 
 st.plotly_chart(fig)
 # st.dataframe(years_df.index)
