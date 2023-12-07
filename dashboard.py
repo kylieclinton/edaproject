@@ -111,19 +111,19 @@ st.plotly_chart(fig)
 
 # st.plotly_chart(fig)
 # # st.dataframe(years_df.index)
-# st.write(f"Total mentions for {selected_character}: {cumulative_sum.iloc[-1]}")
-# st.write(f"Year {selected_character} was mentioned the most: {character.idxmax()}")
-# st.write(f"Number of mentions in {character.idxmax()}: {character.max()}")
-# #top 5 characters for a selected year and total mentions
-# st.text(" ")
-# st.text(" ")
-# selected_year = st.select_slider('Select year', years_df.columns)
+st.write(f"Total mentions for {selected_character}: {cumulative_sum.iloc[-1]}")
+st.write(f"Year {selected_character} was mentioned the most: {character.idxmax()}")
+st.write(f"Number of mentions in {character.idxmax()}: {character.max()}")
+#top 5 characters for a selected year and total mentions
+st.text(" ")
+st.text(" ")
+selected_year = st.select_slider('Select year', years_df.columns)
 
-# selected_year_df = years_df[selected_year].sort_values(ascending=False)[:5]
-# st.subheader(f"Top 5 characters for {selected_year}:")
-# st.dataframe(selected_year_df, width=450)
-# st.caption("Note: Year column shows mentions in that year for the character")
-# #make the dataframe larger so the whole name shows
+selected_year_df = years_df[selected_year].sort_values(ascending=False)[:5]
+st.subheader(f"Top 5 characters for {selected_year}:")
+st.dataframe(selected_year_df, width=450)
+st.caption("Note: Year column shows mentions in that year for the character")
+#make the dataframe larger so the whole name shows
 
 
 #comic mentions barplot for selected character(s)
