@@ -56,7 +56,7 @@ fig.update_layout(xaxis=dict(tickmode='auto'),     annotations=[
         )
     ])
 
-fig.update_axes(tickangle=45, ticktext = [str(x) for x in years_df.columns])
+fig.update_axes(tickangle=45, ticktext = [x.strftime('%Y') for x in years_df.columns])
 
 st.plotly_chart(fig)
 # st.dataframe(years_df.index)
