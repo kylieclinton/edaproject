@@ -45,21 +45,21 @@ fig = px.line(tidy_df, x='Year', y='Mentions',
               line_shape="linear", width=800, height=500, color_discrete_sequence=colors)
 
 # # Customize the layout
-fig.update_layout(xaxis=dict(tickmode='auto'),     annotations=[
-        dict(
-            x=0,  # Adjust this value to the x-coordinate where you want the note
-            y=-2,   # Adjust this value to the y-coordinate where you want the note
-            xref="x",
-            yref="y",
-            text="Note: Year 0 is 1939 and goes to 2023",
-            showarrow=False,
-            ax=0,
-            ay=-40
-        )
-    ])
+# fig.update_layout(xaxis=dict(tickmode='auto'),     annotations=[
+#         dict(
+#             x=0,  # Adjust this value to the x-coordinate where you want the note
+#             y=-2,   # Adjust this value to the y-coordinate where you want the note
+#             xref="x",
+#             yref="y",
+#             text="Note: Year 0 is 1939 and goes to 2023",
+#             showarrow=False,
+#             ax=0,
+#             ay=-40
+#         )
+    # ])
 
 tickval = list(years_df.columns)
-fig.update_layout(xaxis=dict(ticktext = ["1940",
+fig.update_xaxes(ticktext = ["1940",
 "1950",
 "1960",
 "1970",
@@ -67,7 +67,7 @@ fig.update_layout(xaxis=dict(ticktext = ["1940",
 "1990",
 "2000",
 "2010","2020"
-]))
+])
 
 st.plotly_chart(fig)
 # st.dataframe(years_df.index)
