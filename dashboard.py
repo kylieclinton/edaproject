@@ -59,8 +59,7 @@ fig.update_layout(xaxis=dict(tickmode='auto'),     annotations=[
     ])
 
 tickval = list(years_df.columns)
-st.write(tickval)
-fig.update_layout(xaxis=dict(ticktext = ["1939",
+fig.update_layout(xaxis=dict(tickmode='array', tickvals=tickval, ticktext = ["1939",
 "1940","1941","1942","1943","1944","1945","1946","1947","1948","1949",
 "1950","1951","1952","1953","1954","1955",'1956',"1957","1958","1959",
 "1960","1961","1962","1963","1964","1965","1966","1967","1968","1969",
