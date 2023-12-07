@@ -56,6 +56,8 @@ fig.update_layout(xaxis=dict(tickmode='auto'),     annotations=[
         )
     ])
 
+fig.update_axes(tickangle=45, ticktext = [str(x) for x in years_df.columns])
+
 st.plotly_chart(fig)
 # st.dataframe(years_df.index)
 st.write(f"Total mentions for {selected_character}: {cumulative_sum.iloc[-1]}")
@@ -64,7 +66,7 @@ st.write(f"Number of mentions in {character.idxmax()}: {character.max()}")
 #top 5 characters for a selected year and total mentions
 st.text(" ")
 st.text(" ")
-selected_year = st.selectbox('Select a year', years_df.columns)
+selected_year = st.slider('Select a year', years_df.columns)
 
 
 selected_year_df = years_df[selected_year].sort_values(ascending=False)[:5]
