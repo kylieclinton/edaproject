@@ -59,15 +59,9 @@ fig = px.line(tidy_df, x='Year', y='Mentions',
     # ])
 
 tickval = list(years_df.columns)
-fig.update_xaxes(ticktext = ["1939",
-"1949",
-"1959",
-"1969",
-"1979",
-"1989",
-"1999",
-"2009","2019"
-])
+fig.update_layout(xaxis=dict(tickmode='auto'),annotations=[dict(ticktext = ["1939",
+"1949","1959","1969","1979","1989","1999","2009","2019"
+])])
 
 st.plotly_chart(fig)
 # st.dataframe(years_df.index)
