@@ -58,7 +58,9 @@ fig.update_layout(xaxis=dict(tickmode='auto'),     annotations=[
         )
     ])
 
-fig.update_axes(tickangle=45, tickvals = tidy_df['Year'], ticktext = tidy_df['Year'])
+tickval = list(years_df.columns)
+
+fig.update_axes(tickangle=45, tickvals=tickval)
 
 st.plotly_chart(fig)
 # st.dataframe(years_df.index)
