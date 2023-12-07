@@ -1,2 +1,4 @@
 plotly.express
 pandas
+plotly.offline
+plotly.graph_objects
