@@ -70,8 +70,8 @@ st.write(f"Number of mentions in {character.idxmax()}: {character.max()}")
 #top 5 characters for a selected year and total mentions
 st.text(" ")
 st.text(" ")
-selected_year = st.slider('Select a year', years_df.columns)
-
+#make a slider for selected year
+selected_year = st.select_slider('Select a year', years_df.columns)
 
 selected_year_df = years_df[selected_year].sort_values(ascending=False)[:5]
 st.subheader(f"Top 5 characters for {selected_year}:")
