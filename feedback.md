@@ -29,10 +29,8 @@ Blog post 2 feedback:
 ·      A few typos were found, like “19623”
 ·      A fun idea is that with the “spider-man mentions” line chart you can throw in some x-intercept lines that indicate key events. Such as “introduced in 1963” or  “Toby Maguire spiderman released.” Really just an idea
 ·      I love the Top Insights summary!
-
-SHA number: 1cf39fe
-
 I liked your topic! I thought it was fun and engaging. As far as some feedback, I would add some more technical detail about what tools or libraries you used for the EDA. I think it currently is good for poeple who don't have a technical background, but for those who do have a technical background, it could be good for them to see more of the process in how got the answers you did.
+SHA number: 1cf39fe
 
 Streamlit:
 •    There are so many superheroes that it is difficult to find any that I would be interested in Is there any way that you could make a subset of more popular characters that people could choose from instead of giving them all of the heroes? 
