@@ -117,7 +117,7 @@ st.write(f"Number of mentions in {character.idxmax()}: {character.max()}")
 #top 5 characters for a selected year and total mentions
 st.text(" ")
 st.text(" ")
-selected_year = st.select_slider('Select year', years_df.columns)
+selected_year = st.select_slider("Use the slider to select a year and see that year's  most popular characters", years_df.columns)
 
 selected_year_df = years_df[selected_year].sort_values(ascending=False)[:5]
 st.subheader(f"Top 5 characters for {selected_year}:")
@@ -139,6 +139,8 @@ selected_data.set_index('name', inplace=True)
 
 # Plot the bar chart
 st.bar_chart(selected_data['stories_available'].astype(int), color='#d0384e')
-
+st.write("This bar plot shows the number of stories the character has been mentioned in. You can select multiple characters to compare popularity.")
+st.text(" ")
+st.text(" ")
 st.markdown('[Visit My Blog](https://kylieclinton.github.io/blog386/)', unsafe_allow_html=True)
 st.markdown('[Visit My GitHub Repository](https://github.com/kylieclinton/edaproject/)', unsafe_allow_html=True)
