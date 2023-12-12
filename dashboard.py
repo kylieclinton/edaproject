@@ -37,7 +37,7 @@ new_years_df = years_df[years_df.sum(axis=1) > 15]
 # st.dataframe(years_df)
 st.title('Marvel Comics Dashboard')
 st.write("This dashboard provides insights into the popularity of Marvel comics characters over time. Select characters and years to learn about their popularity over time")
-selected_character = st.selectbox('Select a character (type name for specific character)', new_years_df.index, index=1250)
+selected_character = st.selectbox('Select a character (type name for specific character)', new_years_df.index, index=481)
 
 st.header(selected_character)
 character = new_years_df.loc[selected_character]
