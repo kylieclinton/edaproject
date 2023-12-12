@@ -130,7 +130,7 @@ st.caption("Note: Year column shows mentions in that year for the character")
 #use selection checkbox
 st.text(" ")
 st.text(" ")
-selected_characters = st.multiselect('Select characters (type name for specific characters)', marvel_df['name'])
+selected_characters = st.multiselect('Select characters (type name for specific characters)', marvel_df['name'], default= marvel_df[marvel_df['name']=='Captain America']['name'])
 
 st.subheader('Character Mentions in Comics')
 # st.bar_chart(marvel_df[marvel_df['name'].isin(selected_characters)]['comics_available'].astype(int))
