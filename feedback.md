@@ -42,3 +42,7 @@ Streamlit:
 ·      Some additional captions or explanations for the other graphics would be nice to make it more visually presentable.
 ·      Very usable and simple! Just some of your extra expert direction would make it great!
 I thought your dashboard looked great. It visually made sense and each one added on to the previous so it furthered my understanding of your topic as I went through it. One suggestion I would add is that in the first visualization, it could be interesting to be able to to view multiple characters at once, and give each line a different color. Maybe 2 or 3 together. It’s not needed but is often fun being able to look at multiple ones together. Overall it looks great.
+
+Outside class feedback:
+Great job! Really cool.
+I like the interactive elements, it was fun to look through.
