@@ -46,3 +46,8 @@ I thought your dashboard looked great. It visually made sense and each one added
 Outside class feedback:
 Great job! Really cool.
 I like the interactive elements, it was fun to look through.
+
+Feedback process:
+Blog1 - The feedback really helped me refine what I was saying and show how the topic is interesting to me. Adding code was also useful in showing my technical skills.
+Blog2 - The feedback helped me to look at my graphic explanations and improve them. I also added more code snippets to show the technical side, along with adding in packages and libraries I used.
+Streamlit - The feedback helped me make sure I was creating a good interactive app that anyone could use and enjoy. I had a hard time getting the first graphic to work right and get the xlabels on there properly, but after many google searches and AI tips I got it to work in the way I intended it to be.
